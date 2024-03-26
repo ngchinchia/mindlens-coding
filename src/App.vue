@@ -1,47 +1,20 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import ReusableButton from './components/button/ReusableButton.vue'
+import ArrowIcon from '@/components/svg_icons/ArrowIcon.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="flex flex-col space-y-10 items-center justify-center my-80">
+    <ReusableButton variant="primary">Action</ReusableButton>
+    <ReusableButton variant="primary" :left-icon="ArrowIcon" />
+    <ReusableButton variant="primary" :left-icon="ArrowIcon"> Action </ReusableButton>
+    <ReusableButton variant="primary" :right-icon="ArrowIcon"> Action </ReusableButton>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <ReusableButton variant="secondary">Action</ReusableButton>
+    <ReusableButton variant="secondary" :left-icon="ArrowIcon" />
+    <ReusableButton variant="secondary" :left-icon="ArrowIcon"> Action </ReusableButton>
+    <ReusableButton variant="secondary" :right-icon="ArrowIcon"> Action </ReusableButton>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>
