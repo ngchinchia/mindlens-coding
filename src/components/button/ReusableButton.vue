@@ -1,5 +1,6 @@
 <script setup>
 import { computed, useSlots } from 'vue'
+
 // Props declaration
 const props = defineProps({
   leftIcon: {

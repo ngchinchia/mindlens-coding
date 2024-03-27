@@ -92,7 +92,7 @@ const variantIcon = computed(() => {
         alt="notif icon"
         :class="`${content && title ? 'max-w-[32px] max-h-[32px] my-1' : 'max-w-6 max-h-6'}`"
       />
-      <div class="flex flex-col space-y-2">
+      <div :class="`flex flex-col ${content && title ? 'space-y-2' : 'space-y-0'}`">
         <h1 v-if="title" class="font-semibold">{{ title }}</h1>
         <p v-if="content" class="font-regular text-[#0C0D0D] md:min-w-[596px] w-[206px]">
           {{ content }}

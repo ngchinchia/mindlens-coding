@@ -1,0 +1,46 @@
+import { Canvas, Meta, Controls, Story } from '@storybook/blocks'
+import * as ButtonStories from './Button.stories'
+import ReusableButton from '../components/button/ReusableButton.vue'
+
+<Meta of={ButtonStories} />
+
+# Buttons
+
+Button is a user interface element with hover interactions.
+
+You can place text and icons inside of a button.
+
+## Usage
+
+The component comes in different variants such as `primary`, `secondary`, `primary-info` and `secondary-info` which you can use to alter the look and feel of the button.
+
+## Primary : No Icon By default
+
+<Story of={ButtonStories.Primary} />
+
+## Primary : Right Icon
+
+<Story of={ButtonStories.PrimaryRightIcon} />
+## Primary : Left Icon
+
+<Story of={ButtonStories.PrimaryLeftIcon} />
+## Primary : Only Icon
+
+<Story of={ButtonStories.PrimaryIcon} />
+## Secondary : No Icon By default
+
+<Story of={ButtonStories.Secondary} />
+
+## Secondary : Right Icon
+
+<Story of={ButtonStories.SecondaryRightIcon} />
+## Secondary : Left Icon
+
+<Story of={ButtonStories.SecondaryLeftIcon} />
+## Secondary : Only Icon
+<Story of={ButtonStories.SecondaryIcon} />
+## Inputs
+
+Button has the following properties:
+
+<Controls />
