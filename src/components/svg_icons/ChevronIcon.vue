@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'ArrowIcon',
+  name: 'ChevronIcon',
   props: {
     strokeColor: {
       type: String,
@@ -26,7 +26,7 @@ export default {
 <template>
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M2.5 11.5H21.5M21.5 11.5L14.5 18.5M21.5 11.5L14.5 4.5"
+      d="M16 20L8 12L16 4"
       :stroke="strokeClass"
       stroke-width="1.5"
       stroke-linecap="round"
